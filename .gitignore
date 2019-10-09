@@ -1,0 +1,10 @@
+# Project exclude paths
+/eureka-server/target/
+/index-codes-service/target/
+/index-config-server/target/
+/index-data-service/target/
+/index-gather-store-service/target/
+/index-zuul-service/target/
+/third-part-index-data-project/target/
+/trend-trading-backtest-service/target/
+/trend-trading-backtest-view/target/
