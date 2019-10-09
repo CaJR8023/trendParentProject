@@ -1,6 +1,8 @@
 spring:
   application:
     name: index-gather-store-service
+  redis:
+    password: 123zxc
 eureka:
   client:
     serviceUrl:
