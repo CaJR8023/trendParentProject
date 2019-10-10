@@ -3,8 +3,10 @@ package cn.my.trend.pojo;
 import java.io.Serializable;
 
 public class Index implements Serializable{
-	String code;
-	String name;
+	private String code;
+
+	private String name;
+
 	public String getCode() {
 		return code;
 	}
