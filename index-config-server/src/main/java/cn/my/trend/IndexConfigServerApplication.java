@@ -1,4 +1,3 @@
-
 package cn.my.trend;
  
 import org.springframework.boot.autoconfigure.SpringBootApplication;

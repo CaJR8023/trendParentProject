@@ -1,9 +1,3 @@
-/**
-* 趋势投资 SpringCloud 教程 为 how2j.cn 版权所有
-* 本教程仅用于学习使用，切勿用于非法用途，由此引起一切后果与本站无关
-* 供购买者学习，请勿私自传播，否则自行承担相关法律责任
-*/	
-
 package cn.my.trend;
 
 import brave.sampler.Sampler;
@@ -14,8 +8,12 @@ import cn.hutool.core.util.NumberUtil;
 import cn.hutool.core.util.StrUtil;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.hystrix.EnableHystrix;
+import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
+import org.springframework.cloud.netflix.turbine.EnableTurbine;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 
@@ -29,6 +27,9 @@ import java.util.concurrent.TimeoutException;
 @EnableEurekaClient
 @EnableDiscoveryClient
 @EnableFeignClients
+@EnableCircuitBreaker
+@EnableTurbine
+@EnableHystrixDashboard
 public class TrendTradingBackTestServiceApplication {
 
 
