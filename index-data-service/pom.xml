@@ -5,7 +5,6 @@
         <artifactId>trendParentProject</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>cn.how2j.trend</groupId>
     <artifactId>index-data-service</artifactId>
 
 
@@ -30,6 +29,8 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-zipkin</artifactId>
         </dependency>
+
+
     </dependencies>
 
 
